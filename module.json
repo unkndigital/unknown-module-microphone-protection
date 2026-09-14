@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "microphone-protection",
+  "version": "1.0.2",
+  "minCoreVersion": "0.4.6",
+  "title": "Microphone Protection",
+  "description": "Reversible protection for detected ALSA capture devices. Requires verified LG voice blocking for remote audio coverage.",
+  "disableDescription": "Removes this module's microphone-device blocks so those capture devices can work again. The saved preference is kept for later re-enabling. LG voice-service blocking is controlled separately in Privacy Protection.",
+  "publisher": "Unknown Digital and Unknown Suite contributors",
+  "license": "MIT",
+  "requiresRoot": true,
+  "entry": "module.js",
+  "permissions": [
+    "Runs as root; declarations are not a sandbox",
+    "Overlays detected ALSA capture nodes only after checking they are closed; restores only owned overlays",
+    "Reads capture and process metadata; never records microphone audio"
+  ],
+  "actions": {
+    "status": {
+      "title": "View current status",
+      "description": "Lists detected capture devices, requested blocking, verified blocks and devices currently held open. A verified result covers only detected, supported paths.",
+      "readOnly": true,
+      "parameters": {}
+    },
+    "health": {
+      "title": "Check module health",
+      "description": "Checks requested capture blocks and the required LG voice-service block. Unsupported or busy devices are reported, not forcibly changed.",
+      "readOnly": true,
+      "parameters": {}
+    },
+    "maintenance": {
+      "title": "Reapply saved settings",
+      "description": "Rechecks detected capture devices and reapplies the saved blocking choice where safe. If blocking is off, it removes any remaining overlays owned by this module.",
+      "readOnly": false,
+      "parameters": {}
+    },
+    "setBlocking": {
+      "title": "Apply capture blocking",
+      "readOnly": false,
+      "parameters": {
+        "enabled": {
+          "type": "boolean",
+          "title": "Requested microphone-device blocking",
+          "description": "ON blocks supported detected capture inputs, including normal built-in and connected USB/camera audio paths. OFF restores this module's blocks. Proprietary drivers and early-boot or hotplug gaps are not guaranteed covered.",
+          "currentValue": {
+            "path": [
+              "enabled"
+            ]
+          }
+        }
+      },
+      "description": "Changes access to detected microphone capture devices. LG voice-service protection must already be verified; active or unsupported devices are not forcibly blocked."
+    }
+  },
+  "dependsOn": [
+    "privacy-protection"
+  ]
+}
