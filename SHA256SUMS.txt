@@ -1,1 +1,1 @@
-b5f8b8c86440b83c6c6b8acf03a808ecb6c4498253a8d5d72f6abb63a8995325  microphone-protection-1.0.2.zip
+b7be37042d2b7db1a532f08f6335c22254f396c5aaf87a36786b5df4dd80d41b  microphone-protection-1.1.0.zip

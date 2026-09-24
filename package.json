@@ -1,6 +1,6 @@
 {
   "name": "unknown-module-microphone-protection",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "private": true,
   "description": "Reversible protection for detected ALSA capture devices. Requires verified LG voice blocking for remote audio coverage.",
   "license": "MIT",
