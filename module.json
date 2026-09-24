@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "id": "microphone-protection",
-  "version": "1.0.2",
-  "minCoreVersion": "0.4.6",
+  "version": "1.1.0",
+  "minCoreVersion": "0.8.0",
   "title": "Microphone Protection",
   "description": "Reversible protection for detected ALSA capture devices. Requires verified LG voice blocking for remote audio coverage.",
   "disableDescription": "Removes this module's microphone-device blocks so those capture devices can work again. The saved preference is kept for later re-enabling. LG voice-service blocking is controlled separately in Privacy Protection.",
@@ -52,6 +52,7 @@
       "description": "Changes access to detected microphone capture devices. LG voice-service protection must already be verified; active or unsupported devices are not forcibly blocked."
     }
   },
+  "updateStrategy": "enable",
   "dependsOn": [
     "privacy-protection"
   ]
