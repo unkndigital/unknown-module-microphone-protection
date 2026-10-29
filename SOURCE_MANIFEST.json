@@ -1,6 +1,6 @@
 {
   "id": "microphone-protection",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "files": [
     {
       "path": ".gitattributes",
@@ -39,8 +39,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 3538,
-      "sha256": "ed86494b6534576ecdab660e975765bb1dfa375ed525f7f7870dc93bd410b411"
+      "bytes": 4820,
+      "sha256": "fdfc0ad9cd4b71ff60df8ac03bb88288e742b314f9a1ff14912a07aa7ffc1abe"
+    },
+    {
+      "path": "RELEASE_NOTES.md",
+      "bytes": 1893,
+      "sha256": "4769b64e56d0165e65acc19670a36d8d74975e32e53260adb17d5ebc3d2de3ed"
     },
     {
       "path": "SECURITY.md",
@@ -50,7 +55,7 @@
     {
       "path": "SHA256SUMS.txt",
       "bytes": 98,
-      "sha256": "ad8f8204c37da43aa815b740858479486fa2b8f364d7b45bf810b5756da4343c"
+      "sha256": "2a9d08f3ef3b29aefa5bf4bc5e4251fa7a8090f7ec74d99acc86bc5159578748"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -60,7 +65,7 @@
     {
       "path": "build-config.json",
       "bytes": 1105,
-      "sha256": "2c7a28bad06ea41c6d70bc463567616767ff4de322901e87b4f9b7ddb63a2d18"
+      "sha256": "af42820e53f66163ef233a31391eb4b3a6d95b1dcde22c2dbe61d0850cd20370"
     },
     {
       "path": "build.js",
@@ -68,9 +73,9 @@
       "sha256": "608d61aaec5b0e23b66538b373afd7dfad68f40693ec015439d22e003576fc0d"
     },
     {
-      "path": "microphone-protection-1.1.0.zip",
-      "bytes": 19670,
-      "sha256": "b7be37042d2b7db1a532f08f6335c22254f396c5aaf87a36786b5df4dd80d41b"
+      "path": "microphone-protection-1.1.1.zip",
+      "bytes": 20155,
+      "sha256": "9c2f241ef3dcd5c095538d4fb974387eff6398bfcca6b9440a170fcd987b4dd9"
     },
     {
       "path": "module-archive.js",
@@ -79,28 +84,28 @@
     },
     {
       "path": "module-support.js",
-      "bytes": 3244,
-      "sha256": "61a3ce4965b535df79f0ff4ce0d0bcd76a88c7cc38fdb9f5c5c4385bacfd06d9"
+      "bytes": 3304,
+      "sha256": "7d31f1d8de2b54f80ab9c37aabc3490fb228353550db07f1fecfe4265b583124"
     },
     {
       "path": "module.js",
-      "bytes": 1233,
-      "sha256": "82c2550a0e75a0c2829e0737b07182bfd2707fce10e4dc967ff64ff5bd5000f1"
+      "bytes": 1893,
+      "sha256": "6aac0889e03b0f955cec8252588a8df77443f9f35c0c5b2c838d14f261f8e0d8"
     },
     {
       "path": "module.json",
       "bytes": 2659,
-      "sha256": "0c7c1d722150ba4d197a60d7a45be82e07fbb90350ecefcaa872d64eab959e74"
+      "sha256": "704db70a315f5829ad9b861c2dd00dc1e0cba2dba12045e8d50a7bb01d34779d"
     },
     {
       "path": "package-lock.json",
       "bytes": 2241,
-      "sha256": "9ad73cf8e14d5b0ccb7aa62fee84bd6027f378726771c320cc318baee23ab14c"
+      "sha256": "746d678dd04b7d40975d331a28b996df8f9381d0acc7fbe3b06876dfdc735cc3"
     },
     {
       "path": "package.json",
-      "bytes": 472,
-      "sha256": "7820740104aefbf68d11446278fb9cc6718071dd2245622aab48d4c4ec7976bf"
+      "bytes": 509,
+      "sha256": "70bc9bff3366ed01518074bf5e086c43ecb6937a4d7069408e738ec1e3d474a4"
     },
     {
       "path": "runtime/unknown-home-microphone.js",
@@ -114,8 +119,13 @@
     },
     {
       "path": "runtime/unknown-home-privacy.js",
-      "bytes": 17581,
-      "sha256": "f35cf660dcb2a76f8a3719d19b23a61d15f71f17ce71912303a3fb4629080588"
+      "bytes": 18048,
+      "sha256": "44f9e23b5b210fe2dcc0755ae050ac23011e70392131dc71bfb5093467b12e52"
+    },
+    {
+      "path": "tests/test-privacy-engine.js",
+      "bytes": 2871,
+      "sha256": "63dcf63c2c32b7492bf79aced6c28d7fcca6261f5c255154a814619d88dc6058"
     }
   ]
 }

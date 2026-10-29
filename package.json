@@ -1,6 +1,6 @@
 {
   "name": "unknown-module-microphone-protection",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "private": true,
   "description": "Reversible protection for detected ALSA capture devices. Requires verified LG voice blocking for remote audio coverage.",
   "license": "MIT",
@@ -8,7 +8,7 @@
     "node": ">=20"
   },
   "scripts": {
-    "test": "node build.js --check",
+    "test": "node build.js --check && node tests/test-privacy-engine.js",
     "build": "node build.js"
   },
   "devDependencies": {
